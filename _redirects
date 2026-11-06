@@ -1,0 +1,22 @@
+# 1. Force 301 redirects if someone manually types .html
+
+/index.html            /                        301
+/about-us.html         /about-us                301
+/careers.html          /careers                 301
+/contact-us.html       /contact-us              301
+/craft-and-process.html /craft-and-process      301
+/expertise.html        /expertise               301
+/journal.html          /journal                 301
+/services.html         /services                301
+
+# 2. Serve the clean URLs internally (200 OK)
+
+/                      /index.html              200
+/about-us              /about-us.html           200
+/careers               /careers.html            200
+/contact-us            /contact-us.html         200
+/contact               /contact-us.html         200
+/craft-and-process     /craft-and-process.html  200
+/expertise             /expertise.html          200
+/journal               /journal.html            200
+/services              /services.html           200
